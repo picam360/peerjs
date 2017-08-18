@@ -285,7 +285,7 @@ window.RTCSessionDescription = require('./adapter').RTCSessionDescription;
 window.RTCIceCandidate = require('./adapter').RTCIceCandidate;
 window.Negotiator = require('./negotiator');
 window.util = require('./util');
-window.BinaryPack = require('js-binarypack');
+window.BinaryPack = require('binarypack');
 
 },{"./adapter":1,"./dataconnection":2,"./mediaconnection":4,"./negotiator":5,"./peer":6,"./socket":7,"./util":8,"js-binarypack":10}],4:[function(require,module,exports){
 var util = require('./util');
@@ -1418,7 +1418,7 @@ module.exports = Socket;
 var defaultConfig = {'iceServers': [{ 'url': 'stun:stun.l.google.com:19302' }]};
 var dataCount = 1;
 
-var BinaryPack = require('js-binarypack');
+var BinaryPack = require('binarypack');
 var RTCPeerConnection = require('./adapter').RTCPeerConnection;
 
 var util = {
@@ -2869,7 +2869,7 @@ Reliable.prototype.onmessage = function(msg) {};
 module.exports.Reliable = Reliable;
 
 },{"./util":13}],13:[function(require,module,exports){
-var BinaryPack = require('js-binarypack');
+var BinaryPack = require('binarypack');
 
 var util = {
   debug: false,
